@@ -8,3 +8,19 @@ class JobStatus(str, Enum):
     running = 'running'
     completed = 'completed'
     failed = 'failed'
+class AlertSegmentStatus(str, Enum):
+    open = 'open'
+    merged = 'merged'
+    split = 'split'
+    closed = 'closed'
+class AlertLineageEvent(str, Enum):
+    opened = 'opened'
+    kept = 'kept'
+    merged = 'merged'
+    split = 'split'
+    closed = 'closed'
+    reopened = 'reopened'
+class AlertLostReason(str, Enum):
+    gap = 'gap'
+    corrected = 'corrected'
+    superseded = 'superseded'
